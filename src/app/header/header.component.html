@@ -1,0 +1,29 @@
+<nav class="navbar navbar-dark bg-dark" style=" width:100%;">
+  <div style="text-align:left">
+    <trello-button [buttonName]="homeButtonName" [buttonClass] = "homeButtonClass" [buttonIcon] = "homeButtonIcon"></trello-button>
+    <trello-button [buttonName]="boardButtonName" [buttonClass] = "boardButtonClass" [buttonIcon] = "boardButtonIcon"></trello-button>
+    <input placeholder="Search..." type="text">
+  </div>
+  <img src="../assets/trello-logo-blue.png" alt="">
+  <div class="right">
+    <trello-button [buttonName]="addButtonName" [buttonClass] = "addButtonClass" [buttonIcon] = "addButtonIcon"></trello-button>
+    <trello-button [buttonName]="infoButtonName" [buttonClass] = "infoButtonClass" [buttonIcon] = "infoButtonIcon"></trello-button>
+    <trello-button [buttonName]="bellButtonName" [buttonClass] = "bellButtonClass" [buttonIcon] = "bellButtonIcon"></trello-button>
+  </div>
+</nav>
+<nav class="navbar navbar-dark bg-light" style=" width:100%;">
+  <div>
+    <trello-label [labelContent]="labelContent"></trello-label>
+    <trello-button [buttonName]="starButtonName" [buttonClass] = "starButtonClass" [buttonIcon] = "starButtonIcon"></trello-button>
+       | 
+    <trello-label [labelContent]="privateMemberLabelContent"></trello-label>
+       | 
+    <trello-button [buttonName]="teamVisibleButtonName" [buttonClass] = "teamVisibleButtonClass" [buttonIcon] = "teamVisibleButtonIcon"></trello-button>
+       | 
+    <trello-button [buttonName]="inviteButtonName" [buttonClass] = "inviteButtonClass" [buttonIcon] = "inviteButtonIcon"></trello-button>
+  </div>
+  <div>
+    <trello-button [buttonName]="menuButtonName" [buttonClass] = "menuButtonClass" [buttonIcon] = "menuButtonIcon"></trello-button>
+  </div>
+  
+</nav>
