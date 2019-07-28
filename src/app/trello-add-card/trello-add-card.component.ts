@@ -16,4 +16,8 @@ export class TrelloAddCardComponent implements OnInit {
   showAddCardTextbox(){
     this.isShowCardTextBox = !this.isShowCardTextBox
   }
+  
+  addCardButtonName = "Add a list"
+  addCardButtonClass = "btn btn-secondary btn-lg"
+  addCardButtonIcon = "fa fa-plus"
 }
