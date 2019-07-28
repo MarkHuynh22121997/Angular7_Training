@@ -1,0 +1,16 @@
+
+<div [ngSwitch] = "isShowCardTextBox">
+    <form *ngSwitchCase= "false" (ngSubmit)="onSubmit()">
+            <a>
+                <input id="cardTitle" type = "text" autofocus = "true" placeholder="Enter card title..." autocomplete="off" maxlength="512" (blur) = "showAddCardTextbox($event)"/>
+            </a>
+            <div>
+                <input type = "submit" value="Add List"/>
+            </div>
+    </form>
+
+    <button *ngSwitchCase= "true" type="button" [ngClass]="addListButtonClass" (click)="showAddCardTextbox($event)">
+            <i [ngClass]="addListButtonIcon"></i>
+            Add Another Card
+    </button>
+</div>

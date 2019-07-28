@@ -15,6 +15,8 @@ import { TrelloBoardComponent } from './trello-board/trello-board.component';
 import { TrelloAddListComponent } from './trello-add-list/trello-add-list.component';
 import { TrelloSubListComponent } from './trello-sub-list/trello-sub-list.component';
 import { TrelloSubListItemComponent } from './trello-sub-list-item/trello-sub-list-item.component';
+import { TrelloSubListHeaderComponent } from './trello-sub-list-header/trello-sub-list-header.component';
+import { TrelloAddCardComponent } from './trello-add-card/trello-add-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { TrelloSubListItemComponent } from './trello-sub-list-item/trello-sub-li
     TrelloBoardComponent,
     TrelloAddListComponent,
     TrelloSubListComponent,
-    TrelloSubListItemComponent
+    TrelloSubListItemComponent,
+    TrelloSubListHeaderComponent,
+    TrelloAddCardComponent
   ],
   imports: [
     TooltipModule.forRoot(),
