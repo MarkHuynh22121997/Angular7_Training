@@ -1,3 +1,8 @@
 <div>
-    <trello-button [buttonName]="addListButtonName" [buttonClass] = "addListButtonClass" [buttonIcon] = "addListButtonIcon" style="width:100px"></trello-button>
+    <div *ngFor="let subList of mySubList">
+            <app-trello-sub-list [subList] = "subList"></app-trello-sub-list>
+        </div>
+
+    
+    <app-trello-add-list  [isShowListTextBox] = "isShowListButton"></app-trello-add-list>
 </div>

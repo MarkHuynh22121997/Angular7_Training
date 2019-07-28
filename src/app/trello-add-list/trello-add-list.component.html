@@ -1,0 +1,19 @@
+<div [ngSwitch] = "isShowListTextBox">
+<form *ngSwitchCase= "false" (ngSubmit)="onSubmit()">
+    <a>
+        <input id="listTitle" type = "text" autofocus = "true" placeholder="Enter list title..." autocomplete="off" maxlength="512" (blur) = "showList($event)"/>
+    </a>
+    <div>
+        <input type = "submit" value="Add List"/>
+    </div>
+</form>
+
+
+
+<button *ngSwitchCase= "true" type="button" [ngClass]="addListButtonClass" (click)="showList($event)">
+    <i [ngClass]="addListButtonIcon"></i>
+    Add Another List
+</button>
+
+
+</div>
