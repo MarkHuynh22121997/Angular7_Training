@@ -18,7 +18,7 @@ import { TrelloSubListComponent } from './trello-sub-list/trello-sub-list.compon
 import { TrelloSubListItemComponent } from './trello-sub-list-item/trello-sub-list-item.component';
 import { TrelloSubListHeaderComponent } from './trello-sub-list-header/trello-sub-list-header.component';
 import { TrelloAddCardComponent } from './trello-add-card/trello-add-card.component';
-import {DragDropModule} from '@angular/cdk/drag-drop';
+
 import { AutofocusDirective } from './autofocus.directive';
 
 @NgModule({
@@ -42,7 +42,6 @@ import { AutofocusDirective } from './autofocus.directive';
     AngularFontAwesomeModule,
     ButtonsModule.forRoot(),
     HttpClientModule,
-    DragDropModule,
     FormsModule
   ],
   providers: [],

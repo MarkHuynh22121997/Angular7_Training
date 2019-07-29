@@ -1,11 +1,6 @@
 .list-cards{
-    flex: 1 1 auto;
-    margin-bottom: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin: 0 4px;
-    padding: 0 4px;
-    z-index: 1;
-    min-height: 0;
-    
+    margin: 4px;
+    padding: 4px;
+    background-color: white;
+    border-radius: 5px;
 }
