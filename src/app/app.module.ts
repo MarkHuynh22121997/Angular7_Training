@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import {HttpClientModule} from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
@@ -17,6 +18,8 @@ import { TrelloSubListComponent } from './trello-sub-list/trello-sub-list.compon
 import { TrelloSubListItemComponent } from './trello-sub-list-item/trello-sub-list-item.component';
 import { TrelloSubListHeaderComponent } from './trello-sub-list-header/trello-sub-list-header.component';
 import { TrelloAddCardComponent } from './trello-add-card/trello-add-card.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import { AutofocusDirective } from './autofocus.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,8 @@ import { TrelloAddCardComponent } from './trello-add-card/trello-add-card.compon
     TrelloSubListComponent,
     TrelloSubListItemComponent,
     TrelloSubListHeaderComponent,
-    TrelloAddCardComponent
+    TrelloAddCardComponent,
+    AutofocusDirective
   ],
   imports: [
     TooltipModule.forRoot(),
@@ -37,7 +41,9 @@ import { TrelloAddCardComponent } from './trello-add-card/trello-add-card.compon
     AppRoutingModule,
     AngularFontAwesomeModule,
     ButtonsModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

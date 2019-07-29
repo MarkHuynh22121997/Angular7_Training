@@ -1,8 +1,9 @@
-<div>
+<div cdkDropList id = "subList.id">
     <span></span>
     <div class = "list-container" >
-        <app-trello-sub-list-header [headerName] = subList.name></app-trello-sub-list-header>
-        <app-trello-sub-list-item [listID] = "subList.id" ></app-trello-sub-list-item>
-        <app-trello-add-card></app-trello-add-card>
+        <app-trello-sub-list-header [headerName] = "subList.name"></app-trello-sub-list-header>
+        
+        <app-trello-sub-list-item  *ngFor = "let itemDetail of listDetail" [Detail] = "itemDetail"></app-trello-sub-list-item>
+        <app-trello-add-card [idList]= "subList.id"></app-trello-add-card>
     </div>
 </div>

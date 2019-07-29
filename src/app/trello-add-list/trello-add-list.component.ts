@@ -27,7 +27,5 @@ export class TrelloAddListComponent implements OnInit {
   showList(e){
     this.isShowListTextBox =!this.isShowListTextBox;
   }
-  onSubmit(userData){
-      this._http.get
-  }
+
 }
